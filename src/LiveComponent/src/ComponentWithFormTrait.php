@@ -150,7 +150,7 @@ trait ComponentWithFormTrait
         }
 
         $form = $this->getForm();
-        $form->submit($this->formValues);
+        $form->submit($this->formValues, false);
         $this->shouldAutoSubmitForm = false;
 
         if ($validateAll) {
